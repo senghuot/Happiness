@@ -18,7 +18,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
     }
     
     func updateUI() {
-        faceView.setNeedsDisplay()
+        faceView?.setNeedsDisplay()
     }
     
     @IBOutlet weak var faceView: FaceView! {

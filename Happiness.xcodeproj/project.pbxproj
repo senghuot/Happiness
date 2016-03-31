@@ -16,6 +16,7 @@
 		E6AA14241C6D6581009680EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AA14221C6D6581009680EF /* LaunchScreen.storyboard */; };
 		E6AA142F1C6D6581009680EF /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA142E1C6D6581009680EF /* HappinessTests.swift */; };
 		E6AA143A1C6D6581009680EF /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AA14391C6D6581009680EF /* HappinessUITests.swift */; };
+		E6E61E021CACDC72008298B6 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E61E011CACDC72008298B6 /* PsychologistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E6AA14351C6D6581009680EF /* HappinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AA14391C6D6581009680EF /* HappinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessUITests.swift; sourceTree = "<group>"; };
 		E6AA143B1C6D6581009680EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E61E011CACDC72008298B6 /* PsychologistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +115,9 @@
 		E6AA14151C6D6581009680EF /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				E62E6B601CA8F9C300F7B3F1 /* FaceView.swift */,
+				E6E61E011CACDC72008298B6 /* PsychologistViewController.swift */,
 				E62E6B5E1CA8F93500F7B3F1 /* HappinessViewController.swift */,
+				E62E6B601CA8F9C300F7B3F1 /* FaceView.swift */,
 				E6AA141A1C6D6581009680EF /* Main.storyboard */,
 				E62E6B571CA8EFB100F7B3F1 /* Supporting Files */,
 			);
@@ -275,6 +278,7 @@
 			files = (
 				E6AA141F1C6D6581009680EF /* Happiness.xcdatamodeld in Sources */,
 				E62E6B5F1CA8F93500F7B3F1 /* HappinessViewController.swift in Sources */,
+				E6E61E021CACDC72008298B6 /* PsychologistViewController.swift in Sources */,
 				E6AA14171C6D6581009680EF /* AppDelegate.swift in Sources */,
 				E62E6B611CA8F9C300F7B3F1 /* FaceView.swift in Sources */,
 			);
