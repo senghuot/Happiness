@@ -20,17 +20,21 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-Js-EIp" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="scale">
                                         <real key="value" value="0.80000000000000004"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.19244259129999999" green="1" blue="0.88321128609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.46649864931062301" blue="0.19171589447461013" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="S6b-cC-fod" appends="YES" id="5ZW-Lt-hIZ"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,8 +45,16 @@
                             <constraint firstItem="TJJ-Js-EIp" firstAttribute="leading" secondItem="TfU-sh-uGT" secondAttribute="leading" id="m1X-mc-hiN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="TJJ-Js-EIp" id="1hS-O0-hpt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acy-xe-gar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="S6b-cC-fod">
+                    <connections>
+                        <action selector="changeHappiness:" destination="M0s-Wt-Ixk" id="hzh-Kg-zz5"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1093" y="839"/>
         </scene>
